@@ -9,7 +9,7 @@
 use emacs::{defun, Env, Result, Value, IntoLisp};
 
 fn flxy_score(source: String, pattern: String) -> Option<f64> {
-    let result = flxy::score(&source, &pattern);
+    let result = flxy::score(source, pattern);
     if result == None {
         return None;
     }
