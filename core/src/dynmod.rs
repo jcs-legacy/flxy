@@ -8,9 +8,9 @@ use emacs::{defun, Env, Result, Value, IntoLisp};
 ///
 /// Return nil if no match happened.
 ///
-/// (fn PATTERN SOURCE)
+/// (fn SOURCE PATTERN)
 #[defun]
-fn score(_env: &Env, pattern: String, source: String)
-                   -> Result<Option<f64>> {
-    Ok(Some(flxy::score(&pattern, &source).unwrap() as f64))
+fn score(_env: &Env, source: String, pattern: String)
+         -> Result<Option<f64>> {
+    Ok(Some(flxy::score(&source, &pattern).unwrap() as f64))
 }
