@@ -60,10 +60,10 @@
   (interactive)
   (unless (featurep 'flxy-core)
     (let* ((dyn-name (cl-case system-type
-                       ((windows-nt ms-dos cygwin) (concat fuz-bin--dyn-name ".dll"))
-                       (darwin (concat "lib" fuz-bin--dyn-name ".dylib"))
-                       (t (concat "lib" fuz-bin--dyn-name ".so"))))
-           (dyn-path (concat fuz-bin--bin-dir dyn-name)))
+                       ((windows-nt ms-dos cygwin) (concat flxy--dyn-name ".dll"))
+                       (darwin (concat "lib" flxy--dyn-name ".dylib"))
+                       (t (concat "lib" flxy--dyn-name ".so"))))
+           (dyn-path (concat flxy--bin-dir dyn-name)))
       (module-load dyn-path)
       (message "[INFO] Successfully load dynamic module, `%s`" dyn-name))))
 
