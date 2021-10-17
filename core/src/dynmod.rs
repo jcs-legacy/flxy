@@ -15,7 +15,7 @@ fn score(_env: &Env, source: String, pattern: String)
     let result = flxy::score(&source, &pattern);
 
     if result == None {
-        return None;
+        return Some(None);
     }
 
     Ok(Some(result.unwrap() as f64))
