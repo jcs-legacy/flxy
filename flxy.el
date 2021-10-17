@@ -6,8 +6,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Description: Fast, character-based search library in Rust
 ;; Keyword: fuzzy search lisp
-;; Version: 0.0.1
-;; Package-Requires: ((emacs "24.3"))
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/jcs-elpa/flxy
 
 ;; This file is NOT part of GNU Emacs.
@@ -29,7 +29,7 @@
 ;;
 ;; Fast, character-based search library in Rust
 ;;
-;; Inspired by flx for emacs, uses the same basic algorithm.
+;; Inspired by flx for Emacs, uses the same basic algorithm.
 ;;
 
 ;;; Code:
@@ -41,14 +41,20 @@
   (concat (file-name-directory load-file-name) "bin/")
   "Pre-built binaries directory path.")
 
-(defconst flxy--dyn-name "flxy"
+(defconst flxy--dyn-name "flxy_core"
   "Dynamic module name.")
 
 ;;
 ;; (@* "Externals" )
 ;;
 
-(declare-function flxy-score "flxy-core")
+(declare-function flxy-core-score "flxy-core")
+
+;;
+;; (@* "Aliases" )
+;;
+
+(defalias 'flxy-score #'flxy-core-score)
 
 ;;
 ;; (@* "Bootstrap" )
