@@ -7,7 +7,7 @@ on:
   pull_request:
 
 env:
-  DYN_NAME: flxy
+  DYN_NAME: flxy_core
 
 jobs:
   build:
