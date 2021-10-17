@@ -12,5 +12,11 @@ use emacs::{defun, Env, Result, Value, IntoLisp};
 #[defun]
 fn score(_env: &Env, source: String, pattern: String)
          -> Result<Option<f64>> {
-    Ok(Some(flxy::score(&source, &pattern).unwrap() as f64))
+    let result = flxy::score(&source, &pattern);
+
+    if result == None {
+        return None;
+    }
+
+    Ok(Some(result.unwrap() as f64))
 }
