@@ -6,6 +6,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 
 ### 0.1.0
-> Released Oct 17, 2021
+> Released Oct 18, 2021
 
 * Initial release.
