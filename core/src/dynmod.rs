@@ -27,5 +27,5 @@ fn flxy_score(source: &str, pattern: &str) -> Option<f64> {
 /// (fn SOURCE PATTERN)
 #[defun]
 fn score(_env: &Env, source: String, pattern: String) -> Result<Option<f64>> {
-    Ok(flxy_score(&pattern, &source))
+    Ok(flxy_score(&source, &pattern))
 }
