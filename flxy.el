@@ -67,7 +67,7 @@
   (unless (featurep 'flxy-core)
     (let* ((dyn-name (cl-case system-type
                        ((windows-nt ms-dos cygwin) (concat flxy--dyn-name ".dll"))
-                       (darwin (concat "lib" flxy--dyn-name ".dylib"))
+                       (`darwin (concat "lib" flxy--dyn-name ".dylib"))
                        (t (concat "lib" flxy--dyn-name ".so"))))
            (dyn-path (concat flxy--bin-dir dyn-name)))
       (module-load dyn-path)
