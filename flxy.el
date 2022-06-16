@@ -4,11 +4,10 @@
 ;; Created date 2021-10-17 22:30:47
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Fast, character-based search library in Rust
-;; Keyword: fuzzy search lisp
+;; URL: https://github.com/jcs-elpa/flxy
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "25.1"))
-;; URL: https://github.com/jcs-elpa/flxy
+;; Keywords: fuzzy search lisp
 
 ;; This file is NOT part of GNU Emacs.
 
