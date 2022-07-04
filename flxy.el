@@ -7,7 +7,7 @@
 ;; URL: https://github.com/jcs-elpa/flxy
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "25.1"))
-;; Keywords: fuzzy search lisp
+;; Keywords: matching fuzzy search
 
 ;; This file is NOT part of GNU Emacs.
 
