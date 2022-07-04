@@ -3,7 +3,7 @@
          "Fast, character-based search library in Rust")
 
 (website-url "https://github.com/jcs-elpa/flxy")
-(keywords "fuzzy" "search" "lisp")
+(keywords "matching" "fuzzy" "search")
 
 (package-file "flxy.el")
 
