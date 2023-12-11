@@ -3,8 +3,8 @@
 # flxy
 > Fast, character-based search library in Rust
 
-[![CI](https://github.com/jcs-elpa/flxy/actions/workflows/test.yml/badge.svg)](https://github.com/jcs-elpa/flxy/actions/workflows/test.yml)
-[![Build](https://github.com/jcs-elpa/flxy/actions/workflows/build.yml/badge.svg)](https://github.com/jcs-elpa/flxy/actions/workflows/build.yml)
+[![CI](https://github.com/jcs-legacy/flxy/actions/workflows/test.yml/badge.svg)](https://github.com/jcs-legacy/flxy/actions/workflows/test.yml)
+[![Build](https://github.com/jcs-legacy/flxy/actions/workflows/build.yml/badge.svg)](https://github.com/jcs-legacy/flxy/actions/workflows/build.yml)
 
 ## 🔨 Usage
 
