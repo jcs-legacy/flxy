@@ -1,6 +1,6 @@
 ;;; flxy.el --- Fast, character-based search library in Rust  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2021  Shen, Jen-Chieh
+;; Copyright (C) 2021-2024  Shen, Jen-Chieh
 ;; Created date 2021-10-17 22:30:47
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
