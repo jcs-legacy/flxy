@@ -1,3 +1,5 @@
+;; -*- mode: eask; lexical-binding: t -*-
+
 (package "flxy"
          "0.1.0"
          "Fast, character-based search library in Rust")
